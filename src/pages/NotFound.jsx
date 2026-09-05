@@ -1,0 +1,5 @@
+import { Link } from 'react-router-dom'
+
+export default function NotFound() {
+  return <main className="flex min-h-[60vh] items-center justify-center px-5 py-20 md:px-8"><div className="max-w-xl text-center"><p className="text-xs font-bold uppercase tracking-[0.2em] text-copper">404</p><h1 className="mt-4 font-display text-5xl font-semibold text-ink">Page Not Found</h1><p className="mt-5 text-base leading-7 text-muted">The page you are looking for is not available. Return home or browse our plumbing services.</p><div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row"><Link to="/" className="inline-flex min-h-11 items-center justify-center border border-copper bg-copper px-5 py-3 text-sm font-bold text-white hover:bg-copper-dark focus:outline-none focus:ring-2 focus:ring-copper focus:ring-offset-2">Go Home</Link><Link to="/services" className="inline-flex min-h-11 items-center justify-center border border-line bg-white px-5 py-3 text-sm font-bold text-ink hover:border-copper hover:text-copper focus:outline-none focus:ring-2 focus:ring-copper focus:ring-offset-2">Browse Services</Link></div></div></main>
+}

@@ -1,0 +1,6 @@
+import { Phone } from 'lucide-react'
+import Button from './Button.jsx'
+
+export default function CTASection({ title = 'Ready to get your plumbing back on track?', text = 'Use the contact form to share what is happening and start a conversation about your plumbing needs.' }) {
+  return <section className="bg-ink px-5 py-16 text-white md:px-8"><div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 md:flex-row md:items-center"><div className="max-w-xl"><p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-copper-light">Let’s solve it</p><h2 className="font-display text-3xl font-semibold leading-tight md:text-4xl">{title}</h2><p className="mt-4 leading-7 text-white/65">{text}</p></div><div className="flex flex-wrap gap-3"><Button to="/contact">Request service</Button><a href="tel:9096230033" className="inline-flex items-center gap-2 border border-white/25 px-5 py-3 text-sm font-semibold text-white hover:border-copper-light"><Phone size={16} aria-hidden="true" /> Call now</a></div></div></section>
+}

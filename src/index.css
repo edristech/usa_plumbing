@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0b1f30;
+  --ink-soft: #17364b;
+  --copper: #c65a32;
+  --copper-dark: #a84625;
+  --copper-light: #efaa7d;
+  --sand: #f2ede5;
+  --paper: #faf9f7;
+  --line: #d8d7d2;
+  --muted: #5e6870;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: 'DM Sans', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+button, input, select, textarea { font: inherit; }
+summary::-webkit-details-marker { display: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+  main > section { animation: section-rise 500ms ease both; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}
+
+@keyframes section-rise {
+  from { opacity: 0.92; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

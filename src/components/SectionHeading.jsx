@@ -1,0 +1,3 @@
+export default function SectionHeading({ eyebrow, title, text, align = 'left' }) {
+  return <div className={`max-w-2xl ${align === 'center' ? 'mx-auto text-center' : ''}`}><p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-copper">{eyebrow}</p><h2 className="font-display text-3xl font-semibold leading-tight text-ink md:text-4xl">{title}</h2>{text && <p className="mt-4 text-base leading-7 text-muted">{text}</p>}</div>
+}

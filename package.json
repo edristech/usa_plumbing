@@ -9,6 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "server": "node server/src/server.js",
+    "start": "node server/src/server.js",
     "db:init": "node server/src/config/initDatabase.js",
     "admin:create": "node server/src/config/createAdmin.js"
   },

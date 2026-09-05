@@ -12,8 +12,10 @@ function validEmail(value) {
 }
 
 function setAuthCookie(response, token) {
-  const secure = process.env.NODE_ENV === 'production' ? '; Secure' : ''
-  response.setHeader('Set-Cookie', `${cookieName}=${encodeURIComponent(token)}${cookieOptions}${secure}; Path=/`)
+  response.setHeader(
+  'Set-Cookie',
+  `${cookieName}=${encodeURIComponent(token)}${cookieOptions}; Path=/`
+)
 }
 
 function clearAuthCookie(response) {
